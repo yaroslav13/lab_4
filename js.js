@@ -25,10 +25,9 @@ function myFunction(xml) {
   var x = xmlDoc.getElementsByTagName("products");
   for (i = 0; i <x.length; i++) { 
   	var product = Product(
-        x[i].getElementsByTagName("title")[0].nodeValue,
-        x[i].getElementsByTagName("description")[0].nodeValue,
-        x[i].getElementsByTagName("price")[0].nodeValue 
-  	);
+        x[i].getElementsByTagName("title"),
+        x[i].getElementsByTagName("description"),
+        x[i].getElementsByTagName("price"),
     table += "<tr><td>" +
     product.title +
     "</td><td>" +
