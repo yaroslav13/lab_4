@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<products>
+   <product id = 'product'>
+   	<title>Bread</title>
+   	<description>Its a bread</description>
+   	<prise>528 $</prise>
+   	</product>
+   	 <product id = 'product'>
+   	<title>Milk</title>
+   	<description>Its a milk</description>
+   	<prise>100 $</prise>
+   	</product>
+</products>
