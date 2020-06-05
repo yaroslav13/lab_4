@@ -21,13 +21,13 @@ function myFunction(xml) {
   var i;
   var parser = new DOMParser();
   var xmlDoc = parser.parseFromString(xml,"text/xml")
-  var table="<tr><th>Title</th></tr>";
+  var table="<tr><th>Title</th></tr><tr><th>Description</th></tr><tr><th>Price</th></tr>";
   var x = xmlDoc.getElementsByTagName("products");
   for (i = 0; i <x.length; i++) { 
   	var product = new Product(
-        x[i].getElementsByTagName("title"),
-        x[i].getElementsByTagName("description"),
-        x[i].getElementsByTagName("price"),);
+        x[i].getElementsByTagName("title")[0].childNodes[0].nodeValue,
+        x[i].getElementsByTagName("description")[0].childNodes[0].nodeValue,
+        x[i].getElementsByTagName("price")[0].childNodes[0].nodeValue);
     table += "<tr><td>" +
     product.title +
     "</td><td>" +
