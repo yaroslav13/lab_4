@@ -10,4 +10,9 @@
    	<description>Its a milk</description>
    	<prise>100 $</prise>
    	</product>
+      <product>
+      <title>Cookie</title>
+      <description>Its a cookie</description>
+      <prise>100 $</prise>
+      </product>
 </products>
