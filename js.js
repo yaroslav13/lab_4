@@ -28,9 +28,9 @@ function myFunction(xml) {
         x[i].getElementsByTagName("title").childNodes[0].nodeValue,
         x[i].getElementsByTagName("description").childNodes[0].nodeValue,
         x[i].getElementsByTagName("price").childNodes[0].nodeValue);
-    table += "<tr><td>" +
+    table += "<tr><th>" +
     product.title +
-    "</td><td>" +
+    "</th></tr>" +
     product.price +
     "</td></tr>";
   }
