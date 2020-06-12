@@ -18,12 +18,11 @@ function loadXMLDoc() {
 }
 
 function myFunction(xml) {
-  var i;
   var parser = new DOMParser();
   var xmlDoc = parser.parseFromString(xml,"text/xml")
   var table="<tr><th>Title</th><th>Description</th><th>Price</th></tr>";
   var x = xmlDoc.getElementsByTagName("products");
-  for (i = 0; i <x.length; i++) { 
+  for (var i = 0; i <x.length; i++) { 
   	var product = new Product(
         x[i].getElementsByTagName("title").childNodes[0].nodeValue,
         x[i].getElementsByTagName("description").childNodes[0].nodeValue,
