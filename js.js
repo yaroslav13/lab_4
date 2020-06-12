@@ -29,7 +29,8 @@ function myFunction(xml) {
         x[i].getElementsByTagName("price").childNodes[0].nodeValue);
     table += "<tr><td>" +
     product.title +
-    "</td><td>" +
+    "</td>" +
+    "<td>" + product.description + "</td><td>"
     product.price +
     "</td></tr>";
   }
